@@ -41,18 +41,40 @@ function showLoading() {
 function showEnvelope() {
     showPage("envelopePage");
 }
-function openLetter() {
+function openLetter(){
+
     const flap =
         document.querySelector(
             ".envelope-flap"
         );
+
+    const letter =
+        document.querySelector(
+            ".letter-preview"
+        );
+
     flap.style.transform =
         "rotateX(180deg)";
+
     flap.style.transition =
         "0.8s";
-    setTimeout(() => {
+
+    letter.style.transform =
+        "translateY(-100px)";
+
+    setTimeout(()=>{
+
+        letter.style.transform =
+        "translateY(-100px) scale(7)";
+
+    },800);
+
+    setTimeout(()=>{
+
         showPage("letterPage");
-    }, 900);
+
+    },1800);
+
 }
 /* ==========================
    LETTER
