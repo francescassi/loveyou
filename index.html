@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You 💗</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sakura Container -->
+    <div id="sakura-container"></div>
+    <!-- PAGE 1 -->
+    <section class="page active" id="welcomePage">
+        <div class="card">
+            <h1>Halo, sayangku 💗</h1>
+            <p>I have something for you.</p>
+            <button onclick="showLoading()">
+                Open it
+            </button>
+        </div>
+    </section>
+    <!-- PAGE 2 -->
+    <section class="page" id="loadingPage">
+        <div class="card">
+            <h2>Loading...</h2>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <p id="loadingText">0%</p>
+        </div>
+    </section>
+    <!-- PAGE 3 -->
+    <section class="page" id="aboutMePage">
+        <div class="card">
+            <h2>Get To Know Me 💗</h2>
+            <div class="info-box">
+                <p><b>MBTI :</b> INTP-A</p>
+                <p><b>Food :</b> Takoyaki!</p>
+                <p><b>Color :</b> Pink & White</p>
+                <p><b>Music :</b> Hivi!</p>
+                <p><b>Place :</b> All About Nature</p>
+                <p><b>Hobby :</b> Game</p>
+                <p><b>Dream :</b> Doctor! (Amen)</p>
+                <p><b>Flower :</b> Hydrangeas</p>
+                <p><b>Animal :</b> Sharkie 🦈</p>
+                <p>
+                    <b>Love Language :</b>
+                    Quality Time,
+                    Words of Affirmation,
+                    and Physical Touch.
+                </p>
+            </div>
+            <button onclick="showEnvelope()">
+                Okay!
+            </button>
+        </div>
+    </section>
+    <!-- PAGE 4 -->
+    <section class="page" id="envelopePage">
+        <div class="card">
+            <h2>Open Me 💌</h2>
+            <div class="envelope" onclick="openLetter()">
+                <div class="envelope-front"></div>
+                <div class="envelope-flap"></div>
+            </div>
+        </div>
+    </section>
+    <!-- PAGE 5 -->
+    <section class="page" id="letterPage">
+        <div class="card letter-card">
+            <h2>💌</h2>
+            <div class="letter-content">
+                TULIS SURAT KAMU DI SINI.
+                <br><br>
+                Bisa panjang.
+                Bisa romantis.
+                Bisa bikin dia senyum.
+            </div>
+            <button onclick="showKnowYou()">
+                💗
+            </button>
+        </div>
+    </section>
+    <!-- PAGE 6 -->
+    <section class="page" id="knowYouPage">
+        <div class="card">
+            <h2>Get To Know You 💗</h2>
+            <input type="text" placeholder="MBTI">
+            <input type="text" placeholder="Food">
+            <input type="text" placeholder="Color">
+            <input type="text" placeholder="Music">
+            <input type="text" placeholder="Place">
+            <input type="text" placeholder="Hobby">
+            <input type="text" placeholder="Dream">
+            <input type="text" placeholder="Flower">
+            <input type="text" placeholder="Animal">
+            <textarea
+                placeholder="Love Language"
+                rows="4"></textarea>
+            <button onclick="showRelationship()">
+                Continue
+            </button>
+        </div>
+    </section>
+    <!-- PAGE 7 -->
+    <section class="page" id="relationshipPage">
+        <div class="card long-card">
+            <h2>Relationship Questions 💗</h2>
+            <div class="question">
+                <p>
+                    Apakah kamu udah siap untuk punya
+                    komitmen di hubungan ini?
+                </p>
+                <label>
+                    <input type="radio" name="commitment">
+                    Sudah
+                </label>
+                <label>
+                    <input type="radio" name="commitment">
+                    Belum
+                </label>
+                <label>
+                    <input type="radio" name="commitment">
+                    Jawaban lain
+                </label>
+                <textarea rows="3"></textarea>
+            </div>
+            <div class="question">
+                <p>
+                    Apa yang menurut kamu paling penting
+                    dalam sebuah hubungan?
+                </p>
+                <textarea rows="4"></textarea>
+            </div>
+            <div class="question">
+                <p>
+                    Apa yang kamu mau dan tidak mau
+                    dalam hubungan kita nantinya?
+                </p>
+                <textarea rows="4"></textarea>
+            </div>
+            <div class="question">
+                <p>
+                    Apa kamu siap untuk selalu
+                    mengusahakan hubungan ini
+                    apapun kondisinya nanti?
+                </p>
+                <label>
+                    <input type="radio" name="effort">
+                    Siap
+                </label>
+                <label>
+                    <input type="radio" name="effort">
+                    Belum
+                </label>
+                <label>
+                    <input type="radio" name="effort">
+                    Jawaban lain
+                </label>
+                <textarea rows="3"></textarea>
+            </div>
+            <div class="question">
+                <p>
+                    Apa kamu mau berjanji untuk
+                    saling memahami satu sama lain?
+                </p>
+                <label>
+                    <input type="radio" name="understand">
+                    Mau
+                </label>
+                <label>
+                    <input type="radio" name="understand">
+                    Engga
+                </label>
+                <label>
+                    <input type="radio" name="understand">
+                    Jawaban lain
+                </label>
+                <textarea rows="3"></textarea>
+            </div>
+            <button onclick="showProposal()">
+                Continue 💗
+            </button>
+        </div>
+    </section>
+    <!-- PAGE 8 -->
+    <section class="page" id="proposalPage">
+        <div class="card">
+            <h1>May I Be Your Girlfriend?</h1>
+            <div class="choice-buttons">
+                <button onclick="accepted()">
+                    💗
+                </button>
+                <button onclick="rejected()">
+                    ❌
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- PAGE 9 -->
+    <section class="page" id="endingPage">
+        <div class="card">
+            <h1 id="endingTitle"></h1>
+            <p id="endingText"></p>
+        </div>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
