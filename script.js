@@ -168,7 +168,6 @@ function openFlowerProject(){
 /* ==========================
    SAVE ANSWERS
 ========================== */
-/*
 const scriptURL = "https://script.google.com/macros/s/AKfycbx5js4tzG9RZlu5PC2PRzxNymKbxRtb_j7hGibCmTZ50FWhegmpDylWR5CNonxKuzY/exec";
 
 function kirimKeSheet(data) {
@@ -177,4 +176,3 @@ function kirimKeSheet(data) {
         body: JSON.stringify(data)
     });
 }
-*/
