@@ -91,15 +91,24 @@ function accepted() {
    NO
 ========================== */
 function rejected() {
+
     document
         .getElementById("endingTitle")
         .innerText =
         "Thank You 🌸";
+
     document
         .getElementById("endingText")
         .innerText =
         "Thank you for being honest. I appreciate you reading all of this.";
+
+    document
+        .getElementById("retryBtn")
+        .style.display =
+        "inline-block";
+
     showPage("endingPage");
+
     startSakura();
 }
 /* ==========================
