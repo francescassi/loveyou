@@ -142,6 +142,17 @@ function startSakura(){
         }, 9000);
     }, 300);
 }
+
+function backToProposal(){
+
+    document
+        .getElementById("retryBtn")
+        .style.display =
+        "none";
+
+    showPage("proposalPage");
+
+}
 /* ==========================
    SAVE ANSWERS
 ========================== */
