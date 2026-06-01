@@ -83,7 +83,7 @@ function accepted() {
     document
         .getElementById("endingText")
         .innerText =
-        "You just made me the happiest person today I love you so much.";
+        "You just made me the happiest person today. I love you so much.";
     showPage("endingPage");
     document.getElementById(
     "flowerBonus"
