@@ -169,16 +169,12 @@ function openFlowerProject(){
    SAVE ANSWERS
 ========================== */
 /*
-NANTI KALAU SUDAH BUAT
-GOOGLE APPS SCRIPT
-GANTI URL DI BAWAH INI
-const scriptURL =
-"https://script.google.com/macros/s/XXXXXXXX/exec";
-lalu panggil:
-fetch(scriptURL,{
-method:"POST",
-body:JSON.stringify(data)
-})
-supaya semua jawaban
-masuk spreadsheet.
+const scriptURL = "https://script.google.com/macros/s/AKfycbx5js4tzG9RZlu5PC2PRzxNymKbxRtb_j7hGibCmTZ50FWhegmpDylWR5CNonxKuzY/exec";
+
+function kirimKeSheet(data) {
+    fetch("https://script.google.com/macros/s/AKfycbx5js4tzG9RZlu5PC2PRzxNymKbxRtb_j7hGibCmTZ50FWhegmpDylWR5CNonxKuzY/exec", {
+        method: "POST",
+        body: JSON.stringify(data)
+    });
+}
 */
