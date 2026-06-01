@@ -17,7 +17,12 @@ function showPage(id) {
 function showLoading() {
 
     const music = document.getElementById("bgMusic");
-    music.play();
+
+music.volume = 1;
+
+music.play().catch(err => {
+    console.log("Music gagal play:", err);
+});
 
     showPage("loadingPage");
 
