@@ -121,21 +121,22 @@
                     komitmen di hubungan ini?
                 </p>
                 <label>
-                    <input type="radio" name="commitment">
+                    <input type="radio" name="commitment" value="Sudah">
                     Sudah
                 </label>
                 <label>
-                    <input type="radio" name="commitment">
+                    <input type="radio" name="commitment" value="Belum">
                     Belum
                 </label>
                 <label>
-                    <input type="radio" name="commitment">
+                    <input type="radio" name="commitment" value="Jawaban lain">
                     Jawaban lain
                 </label>
-                <textarea
-    class="other-answer"
-    rows="3"
-    placeholder="Jika memilih 'Jawaban lain', tulis di sini...">
+               <textarea
+id="commitmentOther"
+class="other-answer"
+rows="3"
+placeholder="Jika memilih 'Jawaban lain', tulis di sini...">
 </textarea>
             </div>
             <div class="question">
@@ -143,10 +144,11 @@
                     Apa yang menurut kamu paling penting
                     dalam sebuah hubungan?
                 </p>
-                <textarea
-    class="other-answer"
-    rows="3"
-    placeholder="tulis di sini...">
+              <textarea
+id="commitmentOther"
+class="other-answer"
+rows="3"
+placeholder="Tulis di sini...">
 </textarea>
             </div>
             <div class="question">
@@ -155,9 +157,10 @@
                     dalam hubungan kita nantinya?
                 </p>
                 <textarea
-    class="other-answer"
-    rows="3"
-    placeholder="tulis di sini...">
+id="commitmentOther"
+class="other-answer"
+rows="3"
+placeholder="Tulis di sini...">
 </textarea>
             </div>
             <div class="question">
@@ -167,21 +170,62 @@
                     apapun kondisinya nanti?
                 </p>
                 <label>
-                    <input type="radio" name="effort">
+                    <input type="radio" name="effort" value="Siap">
                     Siap
                 </label>
                 <label>
-                    <input type="radio" name="effort">
+                    <input type="radio" name="effort" value="Belum">
                     Belum
                 </label>
                 <label>
-                    <input type="radio" name="effort">
+                    <input type="radio" name="effort" value="Jawaban lain">
                     Jawaban lain
                 </label>
-               <textarea
-    class="other-answer"
-    rows="3"
-    placeholder="Jika memilih 'Jawaban lain', tulis di sini...">
+           <textarea
+id="commitmentOther"
+class="other-answer"
+rows="3"
+placeholder="Jika memilih 'Jawaban lain', tulis di sini...">
+</textarea>
+            </div>
+            <div class="question">
+                <p> Apa yang kamu rasa “dibutuhkan” dalam hubungan kita nanti?
+                </p>
+                <textarea
+id="commitmentOther"
+class="other-answer"
+rows="3"
+placeholder="Tulis di sini...">
+</textarea>
+            </div>
+                <div class="question">
+                <p> Apa alasan kamu ingin menjalin hubungan sama aku?
+                </p>
+                <textarea
+id="commitmentOther"
+class="other-answer"
+rows="3"
+placeholder="Tulis di sini...">
+</textarea>
+            </div>
+            <div class="question">
+                <p> Dari 1-10 seberapa penting evaluasi dalam hubungan menurut kamu?
+                </p>
+                <textarea
+id="commitmentOther"
+class="other-answer"
+rows="3"
+placeholder="Tulis di sini...">
+</textarea>
+            </div>
+            <div class="question">
+                <p> Yang terakhir, apakah kamu sudah melupakan dan selesai dengan masa lalu?
+                </p>
+                <textarea
+id="commitmentOther"
+class="other-answer"
+rows="3"
+placeholder="Tulis di sini...">
 </textarea>
             </div>
             <div class="question">
@@ -190,23 +234,50 @@
                     saling memahami satu sama lain?
                 </p>
                 <label>
-                    <input type="radio" name="understand">
+                    <input type="radio" name="understand" value="Mau">
                     Mau
                 </label>
                 <label>
-                    <input type="radio" name="understand">
+                    <input type="radio" name="understand" value="Engga">
                     Engga
                 </label>
                 <label>
-                    <input type="radio" name="understand">
+                    <input type="radio" name="understand" value="Jawaban lain">
                     Jawaban lain
                 </label>
-               <textarea
-    class="other-answer"
-    rows="3"
-    placeholder="Jika memilih 'Jawaban lain', tulis di sini...">
+                <textarea
+id="commitmentOther"
+class="other-answer"
+rows="3"
+placeholder="Jika memilih 'Jawaban lain', tulis di sini...">
 </textarea>
             </div>
+            <div class="question">
+    <p>Apa kamu mau berjanji untuk selalu jujur dalam hubungan kita apapun yang terjadi nantinya?</p>
+
+    <label>
+        <input type="radio" name="jujur" value="Mau">
+        Mau
+    </label>
+
+    <label>
+        <input type="radio" name="jujur" value="Engga">
+        Engga
+    </label>
+
+    <label>
+        <input type="radio" name="jujur" value="Jawaban lain">
+        Jawaban lain
+    </label>
+    <textarea
+id="commitmentOther"
+class="other-answer"
+rows="3"
+placeholder="Jika memilih 'Jawaban lain', tulis di sini...">
+</textarea>
+
+    <input type="text" id="commitmentOther" placeholder="Jika jawaban lain, isi di sini">
+</div>
             <button onclick="showProposal()">
                 Continue 💗
             </button>
