@@ -15,18 +15,21 @@ function showPage(id) {
    LOADING
 ========================== */
 function showLoading() {
+
+    const music = document.getElementById("bgMusic");
+    music.play();
+
     showPage("loadingPage");
+
     let progress = 0;
-    const progressBar =
-        document.getElementById("progressBar");
-    const loadingText =
-        document.getElementById("loadingText");
+    const progressBar = document.getElementById("progressBar");
+    const loadingText = document.getElementById("loadingText");
+
     const interval = setInterval(() => {
         progress++;
-        progressBar.style.width =
-            progress + "%";
-        loadingText.innerText =
-            progress + "%";
+        progressBar.style.width = progress + "%";
+        loadingText.innerText = progress + "%";
+
         if(progress >= 100){
             clearInterval(interval);
             setTimeout(() => {
