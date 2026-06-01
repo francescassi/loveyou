@@ -176,3 +176,21 @@ function kirimKeSheet(data) {
         body: JSON.stringify(data)
     });
 }
+
+function submitAll() {
+    const data = {
+        mbti: document.getElementById("mbti").value,
+        food: document.getElementById("food").value,
+        color: document.getElementById("color").value,
+        music: document.getElementById("music").value,
+        place: document.getElementById("place").value,
+        hobby: document.getElementById("hobby").value,
+        dream: document.getElementById("dream").value,
+        flower: document.getElementById("flower").value,
+        animal: document.getElementById("animal").value,
+        loveLanguage: document.getElementById("loveLanguage").value
+    };
+
+    kirimKeSheet(data);
+    showRelationship();
+}
