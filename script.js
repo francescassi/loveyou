@@ -168,7 +168,7 @@ function openFlowerProject(){
 /* ==========================
    SAVE ANSWERS
 ========================== */
-const scriptURL = "https://script.google.com/macros/s/AKfycbzkwLgaddOj11_6cMoThsSAkOiKALaJJCON1TxmiffMmRljKFh2-sLKUaPqe9lLvlg/exec";
+const scriptURL = "https://script.google.com/macros/s/AKfycbzNdAIdYnbmx7hwGcwIXfMaGzlEElT37cxzMFZ0mdff1_y2kjOCWSrhouWvfCNNyGM/exec";
 
 function kirimKeSheet(data) {
     fetch(scriptURL, {
