@@ -18,11 +18,11 @@ function showLoading() {
 
     const music = document.getElementById("bgMusic");
 
-music.volume = 1;
+    music.volume = 1;
 
-music.play().catch(err => {
-    console.log("Music gagal play:", err);
-});
+    music.play().catch(err => {
+        console.log("Gagal play:", err);
+    });
 
     showPage("loadingPage");
 
