@@ -194,3 +194,30 @@ function submitAll() {
     kirimKeSheet(data);
     showRelationship();
 }
+
+function submitRelationship() {
+    const data = {
+        commitment: document.querySelector('input[name="commitment"]:checked')?.value,
+        commitment_other: document.getElementById("com0")?.value,
+
+        penting: document.getElementById("penting0")?.value,
+        mau: document.getElementById("mau0")?.value,
+
+        effort: document.querySelector('input[name="effort"]:checked')?.value,
+        effort_other: document.getElementById("effort0")?.value,
+
+        need: document.getElementById("need0")?.value,
+        reason: document.getElementById("reason0")?.value,
+        eval: document.getElementById("eval0")?.value,
+        ex: document.getElementById("ex0")?.value,
+
+        understand: document.querySelector('input[name="understand"]:checked')?.value,
+        understand_other: document.getElementById("janji0")?.value,
+
+        jujur: document.querySelector('input[name="jujur"]:checked')?.value,
+        jujur_other: document.getElementById("jujur0")?.value
+    };
+
+    kirimKeSheet(data);
+    showProposal();
+}
