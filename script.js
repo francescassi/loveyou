@@ -153,6 +153,14 @@ function backToProposal(){
     showPage("proposalPage");
 
 }
+function openFlowerProject(){
+
+    window.open(
+        "https://francescassi.github.io/Flowers",
+        "_blank"
+    );
+
+}
 /* ==========================
    SAVE ANSWERS
 ========================== */
