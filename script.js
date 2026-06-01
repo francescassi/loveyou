@@ -79,11 +79,11 @@ function accepted() {
     document
         .getElementById("endingTitle")
         .innerText =
-        "Thank You 💗";
+        "Thank You Sayangku💗";
     document
         .getElementById("endingText")
         .innerText =
-        "You just made me the happiest person today.";
+        "You just made me the happiest person today I love you so much.";
     showPage("endingPage");
     document.getElementById(
     "flowerBonus"
@@ -99,12 +99,12 @@ function rejected() {
     document
         .getElementById("endingTitle")
         .innerText =
-        "Thank You 🌸";
+        "YANG BENER GAK LU";
 
     document
         .getElementById("endingText")
         .innerText =
-        "Thank you for being honest. I appreciate you reading all of this.";
+        "ULANG ANJIM ULANGGGG";
 
     document
         .getElementById("retryBtn")
