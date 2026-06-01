@@ -85,6 +85,10 @@ function accepted() {
         .innerText =
         "You just made me the happiest person today.";
     showPage("endingPage");
+    document.getElementById(
+    "flowerBonus"
+).style.display =
+"block";
     startSakura();
 }
 /* ==========================
